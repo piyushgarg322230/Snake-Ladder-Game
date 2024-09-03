@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader Example</title>
+
+</head>
+<body>
+    <h1>Loader Example</h1>
+    <button onclick="startLoading()">Start Loading</button>
+    <button onclick="stopLoading()">Stop Loading</button>
+
+    <script>
+        function startLoading() {
+            document.body.classList.add('loading');
+        }
+
+        function stopLoading() {
+            document.body.classList.remove('loading');
+        }
+
+        // Simulate loading completion
+        window.addEventListener('load', function () {
+            stopLoading(); // Hide the loader once the page has fully loaded
+        });
+    </script>
+</body>
+</html>

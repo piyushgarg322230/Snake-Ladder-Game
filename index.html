@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Snake Ladder</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+</head>
+
+<body >
+    <div id="loader-container">
+        <div class="loader">Waiting for opponent...</div>
+    </div>
+
+
+    <div id="menu">
+        <div class="menu__container">
+            <button id="playComputerBtn">Play</button>
+        </div>
+    </div>
+
+    <div id="playground">
+        <div id="boardWrapper">
+            <div id="gameBoard">
+                <div class="player" id="redPlayerPiece">
+                    <span class="player-name">Red</span>
+                </div>
+                <div class="player" id="greenPlayerPiece">
+                    <span class="player-name">Green</span>
+                </div>
+                <!-- <div class="player" id="bluePlayerPiece">
+                    <span class="player-name">Blue</span>
+                </div>
+                <div class="player" id="yellowPlayerPiece">
+                    <span class="player-name">Yellow</span>
+                </div> -->
+    
+                <div class="player" id="computerPlayerPiece">
+                    <span class="player-name">Green</span>
+                </div>
+    
+                <div id="startingLinePlayers"></div>
+                
+
+                <div class="tray1">
+                    <div class="playerImg1">Player 1</div>
+                    <button id="superplay" disabled>
+                        <div id="dice1"></div>
+                    </button>
+                </div>
+                <div class="tray2">
+                        <div id="dice2"></div>
+                    <div class="playerImg1">Player 2</div>
+
+                </div>
+    
+                <div id="gamePodium">
+                </div>
+            </div>
+        </div>
+    
+        <div class="controller">
+            <button class="play" id="red"></button>
+            <button class="play" id="green"></button>
+            <button class="play" id="computer"></button>
+        </div>
+        <div id="log" style="display: none;"></div>
+    </div>
+
+    <button id="resetBtn" >
+        <img src="./icons/arrow-clockwise.svg" alt="Restart" title="Reset">
+    </button>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <p>You None</p>
+            <button class="close-btn" id="closeBtn">Continue</button>
+        </div>
+    </div>
+
+    <div class="popupBack" id="popupBack">
+        <div class="popupBack-content">
+            <button id="exitBtn" class="popupBack-button">Leave Game</button>
+            <button id="continueBtn" class="popupBack-button">Continue</button>
+        </div>
+    </div>
+
+
+
+    <script src="photon-javascript-sdk_v4-3-1-0/lib/photon-em.min.js"></script>
+    <script src="./js/constant.js"></script>
+    <script src="./js/player.js"></script>
+    <script src="./js/board.js"></script>
+    <!-- <script src="./js/PhotonManager.js"></script> -->
+    <script src="./js/app.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+            document.getElementById('popup').style.opacity = 1;
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('popupBack').style.display = 'none';
+           document.getElementById('popupBack').style.opacity = 1;
+           document.getElementById('resetBtn').style.display = 'none';
+           document.getElementById('resetBtn').style.opacity = 1;
+           
+            document.getElementById('loader-container').style.display = 'none'; // Hide the loader
+        });
+    </script>
+</body>
+
+</html>

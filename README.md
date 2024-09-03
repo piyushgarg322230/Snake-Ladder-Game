@@ -1,0 +1,2 @@
+# Snake-Ladder-Game
+  A multiplayer Snake and Ladder game developed using Photon Server, where real users can compete against AI players in a dynamic and interactive environment. The game supports seamless online connectivity, allowing players to engage in classic board game fun with smooth gameplay. Photon Server ensures real-time interactions, providing an exciting and competitive experience for both human and computer players.

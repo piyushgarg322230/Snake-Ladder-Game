@@ -32,4 +32,4 @@ Web Application is available
 Pull requests are welcome. For significant changes, please open an issue first to discuss what you would like to change.
 
 ## Contact
-For any questions or feedback, please contact [Piyush Garg](piyushgarg322230@gmail.com).
+For any questions or feedback, please contact [Piyush Garg](mailto:piyushgarg322230@gmail.com)

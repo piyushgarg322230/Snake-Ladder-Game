@@ -11,7 +11,7 @@ A basic Snake and Ladder game is a board game where players move their tokens al
 ## Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/shivam-sharma-2000/ASAR-Bidding-App.git
+    git clone https://github.com/piyushgarg322230/Snake-Ladder-Game.git
     ```
 2. Open the project .
 3. Run the Browser.
